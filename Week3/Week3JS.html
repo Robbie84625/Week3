@@ -9,6 +9,20 @@
     </head>
 
     <body>
+        <script>
+        function over(elem){
+            elem.style.backgroundColor="#ddaaaa";
+        }
+        function out(elem){
+            elem.style.backgroundColor="#ffcccc";
+        }
+        function down(elem){
+            elem.style.fontWeight="bold";
+        }
+        function up(elem){
+            elem.style.fontWeight="normal";
+        }
+        </script>
         <div  class="frame">
             <div class="left">
                 My Webside
@@ -19,11 +33,7 @@
                 <div class="item">item3</div>
                 <div class="item">item4</div>
                 <div class="icon">
-                    <img src="icon.png" class="icon_img"    onmouseover="over(this);"
-                                                            onmouseout="out(this);"
-                                                            onmousedown="down(this)"
-                                                            onmouseup="up(this)"
-                                                            onclick="FloatingMenu(this)">
+                    <img src="icon.png" class="icon_img">
                 </div>
             </div>
         </div>
@@ -98,10 +108,21 @@
             <div class="sixteen_img">
 
             </div>
+
         </div>
-        <script type="module" src="data_json.js">
-            
-        </script>
+
+        <div class="btnDiv">
+
+            <span class="btn" 
+            onmouseover="over(this);"
+            onmouseout="out(this);"
+            onmousedown="down(this);"
+            onmouseup="up(this);">
+            點我
+            </span>
+
+        </div>
+        <script type="module" src="data_json.js"></script>
     </body>
 </html>
 
